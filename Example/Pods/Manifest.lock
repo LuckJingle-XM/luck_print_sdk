@@ -1,0 +1,16 @@
+PODS:
+  - luck_print_sdk (0.1.0)
+
+DEPENDENCIES:
+  - luck_print_sdk (from `../`)
+
+EXTERNAL SOURCES:
+  luck_print_sdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  luck_print_sdk: 66e85c4c5f0980391b2214cf92916524e4b0f126
+
+PODFILE CHECKSUM: 357a64d2aa8f6058793a5230ab8bac9df3128592
+
+COCOAPODS: 1.12.1

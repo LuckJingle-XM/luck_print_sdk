@@ -1,0 +1,6 @@
+framework module Pods_luck_print_sdk_Tests {
+  umbrella header "Pods-luck_print_sdk_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "luck_print_sdk",
+  "version": "0.1.0",
+  "summary": "A short description of luck_print_sdk.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/汤俊杰/luck_print_sdk",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "汤俊杰": "921969987@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/汤俊杰/luck_print_sdk.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "YourFrameworkName/**/*.{h,m,swift}",
+  "vendored_frameworks": "luck_print_sdk/*.framework"
+}
