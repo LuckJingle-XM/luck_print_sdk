@@ -4,67 +4,68 @@
 [中文](../README_CN.md)
 
 ## Introduction
-This library is used for communication with printers on the iOS platform. For those who need it, please refer to the tutorial below to integrate the SDK and interact with LuckJingle printers!
+本库用于在iOS平台上与打印机通讯用的 凡有需求者，可参照以下教程接入sdk，实现与LuckJingle打印机交互！
 
-## Preparation
-Please contact the relevant personnel to obtain the asKey to ensure that you can use the SDK normally. Before applying for the asKey, please confirm the supported printer models.
+## 准备阶段
+请联系相关人员获取asKey，以确保您能正常使用sdk，申请askey前请确认要支持的打印机型号
 
-## Installation
+## 安装
 
-#### Direct import
-Please download the files from this library: LuckBleSDK.framework, ImageDataProcesser.framework, and import them into your project.
+#### 直接导入
+请下载本库中的文件：LuckBleSDK.framework，ImageDataProcesser.framework，并引入
+项目中
 
 
 #### cocoapods
-Use Cocoapods for dependency management.
+利用cocoapods依赖管理
 ```
 pod 'printer_framework_ios'
 ```
 
-## Instructions
+## 使用说明
 
-#### Set asKey
+#### 设置askey
 
-Due to uncontrollable factors, we have two environments, one for domestic use and one for overseas use. Please set it after the application is loaded.
+因不可抗力，我们有两套环境，一套国内使用，一套国外使用，请在应用加载后设置
 ```swift
-// For domestic users
+// 国内用户
 JKBleManager.sharedInstance().asKey = "your askey"
-// For overseas users
+// 国外用户
 JKBleManager.sharedInstance().abroadAsKey = "your askey"
 ```
 
-#### Bluetooth Event Monitoring
+#### 蓝牙事件监听
 
 ```swift
-// Connected device success event
+// 连接设备成功事件
 #define kBleDidConnectPeripheralNoticeName @"kBleDidConnectPeripheralNoticeName"
-// Disconnection event
+// 断开连接事件
 #define kBleDidDisconnectPeripheralNoticeName @"kBleDidDisconnectPeripheralNoticeName"
-// Connection failure event
+// 连接失败事件
 #define kBleDidFailToConnectPeripheralNoticeName @"kBleDidFailToConnectPeripheralNoticeName"
-// Bluetooth status change event
+// 蓝牙状态改变事件
 #define kBleDidChangeStateNoticeName @"kBleDidChangeStateNoticeName"
-// Found device event
+// 发现设备事件
 #define kBleDidPeripheralFoundNoticeName @"kBleDidPeripheralFoundNoticeName"
-// Not supporting the device, the device will be disconnected
+// 不支持设备，设备会被断开
 #define kLuckPrinterDidNotSupportNoticeName @"kLuckPrinterDidNotSupportNoticeName"
 ```
 
-#### Connect Device
+#### 连接设备
 
 ```swift
 override func viewDidLoad() {
     super.viewDidLoad()
 
-    // Listen for device discovery events
+    // 监听发现设备事件
     NotificationCenter.default.addObserver(self, selector: #selector(luckBleDidDiscoverPrinters(sender:)), name: NSNotification.Name.init("kBleDidPeripheralFoundNoticeName"), object: nil)
-    // Listen for device connection events
+    // 监听设备连接事件
     NotificationCenter.default.addObserver(self, selector: #selector(luckBleDidConnect(sender:)), name: NSNotification.Name.init("kBleDidConnectPeripheralNoticeName"), object: nil)
     
 }
 
 @objc func luckBleDidDiscoverPrinters(sender: Notification) {
-    // Discover new devices, please filter according to your needs to avoid affecting the user experience due to disabled devices
+    // 发现新设备，请按自己需求做过滤，避免因设备被禁用影响用户体验
     guard let obj = sender.object as? NSDictionary else { return }
     guard let peripheral = obj["peripheral"] as? CBPeripheral else { return }
     if device_list.contains(peripheral) {
@@ -74,7 +75,7 @@ override func viewDidLoad() {
     tableView.reloadData()
 }
 
-// Connect device
+// 连接设备
 override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
     
@@ -84,17 +85,17 @@ override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: Inde
 
 
 @objc func luckBleDidConnect(sender: Notification) {
-    // Connection successful Only when connected successfully will JKBleManager.sharedInstance().printer have a value
+    // 连接成功 只有连接成功JKBleManager.sharedInstance().printer才会有值
     self.navigationController?.popViewController(animated: true)
 }
 ```
 
 
-#### Get Device Information
+#### 获取设备信息
 ```swift
 printer.getInfo { [weak self] info, error in
     guard let weakself = self else { return }
-    // Some fields of information may be empty for different models
+    // 不同型号获取到的信息有些字段可能为空
     let str = """
         state = \(info.state) thick = \(info.thick) time = \(info.closeTime)
         power = \(info.power) speed = \(info.speed) paper = \(info.paperType)
@@ -102,48 +103,48 @@ printer.getInfo { [weak self] info, error in
         """
 }
 
-// Set density
+// 设置浓度
 printer.thick = 1
-// Set paper type
+// 设置纸张类型
 printer.paperType = .ZD
-// Set shutdown time
+// 设置关机时间
 printer.closeTime = 20
-// After setting the printer attributes, please call synchronize to sync to the printer
+// 设置打印机属性后，请调用同步到打印机
 printer.synchronize {
                     
 }
 ```
 
 
-#### Printing Example
+#### 打印示例
 
 ```swift
 guard let printer = JKBleManager.sharedInstance().printer else { return }
-// Set density, default is 1, moderate. If not needed, ignore it
+// 设置浓度，默认1，适中，如果不需要请忽略
 printer.thick = 1
-// Set paper type, only needed for A4 devices, ignore it for mini devices
+// 设置纸张类型，A4设备才需要，迷你请忽略
 printer.paperType = .ZD
-// Set paper size, refer to the SDK for data types, ignore it if the device only supports one size
+// 设置纸张尺寸，数据类型请参考sdk，设备只支持一种尺寸的忽略
 printer.labelSize = size
-// Is it label printing
+// 是否是标签打印
 printer.isLabel = true
-// Scale to the size required by the printer
+// 缩放到打印机需要的尺寸
 let printImage = printer.normalPreviewImage(zx)
 
 
-// Call the following two methods as needed
+// 下面两个方法按需调用
 
-// Call continuous paper printing,
+// 调用连续纸打印,
 printer.print([printImage], copies: 1) {error in
-    print("Printing completed")
+    print("打印完成")
 }
 
-// Call label printing
+// 调用标签打印
 printer.printLabel([printImage], copies: 1) {error in
-    print("Printing completed")
+    print("打印完成")
 }
 ```
 
-#### Others
-For more usage scenarios, please refer to the downloaded library and the Example folder.
+#### 其他
+更多使用情况请参考下载本库，参考Example
 
