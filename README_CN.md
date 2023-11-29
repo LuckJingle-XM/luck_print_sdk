@@ -1,7 +1,7 @@
 # luck_print_sdk
 
-[Introduction in English](../README.md)
-[中文](../README_CN.md)
+[Introduction in English](./README.md)
+[中文](./README_CN.md)
 
 ## Introduction
 本库用于在iOS平台上与打印机通讯用的 凡有需求者，可参照以下教程接入sdk，实现与LuckJingle打印机交互！
