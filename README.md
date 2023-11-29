@@ -2,6 +2,7 @@
 
 [Introduction in English](./README.md)
 [中文](./README_CN.md)
+[한국어](./README_KR.md)
 
 ## Introduction
 This library is used for communication with printers on the iOS platform. For those who need it, please refer to the tutorial below to integrate the SDK and interact with LuckJingle printers!

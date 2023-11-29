@@ -4,69 +4,69 @@
 [中文](./README_CN.md)
 [한국어](./README_KR.md)
 
-## Introduction
-本库用于在iOS平台上与打印机通讯用的 凡有需求者，可参照以下教程接入sdk，实现与LuckJingle打印机交互！
+## 소개
+이 라이브러리는 iOS 플랫폼에서 프린터와 통신하기 위한 것입니다. 이를 필요로 하는 사용자들은 아래 튜토리얼을 참조하여 SDK를 통합하고 LuckJingle 프린터와 상호 작용을 구현할 수 있습니다!
 
-## 准备阶段
-请联系相关人员获取asKey，以确保您能正常使用sdk，申请askey前请确认要支持的打印机型号
+## 준비 단계
+asKey를 얻기 위해 관련 인원에게 문의하여 SDK를 정상적으로 사용할 수 있도록하십시오. asKey를 신청하기 전에 지원하는 프린터 모델을 확인하십시오.
 
-## 安装
+## 설치
 
-#### 直接导入
-请下载本库中的文件：LuckBleSDK.framework，ImageDataProcesser.framework，并引入
-项目中
+#### 직접 가져오기
+이 라이브러리에서 파일인 LuckBleSDK.framework, ImageDataProcesser.framework을 다운로드하고 프로젝트에 가져옵니다.
 
 
 #### cocoapods
-利用cocoapods依赖管理
+Cocoapods를 사용하여 종속성 관리
 ```
 pod 'printer_framework_ios'
 ```
 
-## 使用说明
+## 사용 지침
 
-#### 设置askey
+#### asKey 설정
 
-因不可抗力，我们有两套环境，一套国内使用，一套国外使用，请在应用加载后设置
+불가피한 상황으로 인해 국내 사용을 위한 두 가지 환경이 있습니다. 응용 프로그램이로드 된 후에 설정하십시오.
 ```swift
-// 国内用户
+// 국내 사용자
 JKBleManager.sharedInstance().asKey = "your askey"
-// 国外用户
+// 국외 사용자
 JKBleManager.sharedInstance().abroadAsKey = "your askey"
 ```
 
-#### 蓝牙事件监听
+#### 블루투스 이벤트 모니터링
 
 ```swift
-// 连接设备成功事件
+// 디바이스 연결 성공 이벤트
 #define kBleDidConnectPeripheralNoticeName @"kBleDidConnectPeripheralNoticeName"
-// 断开连接事件
+// 연결 해제 이벤트
 #define kBleDidDisconnectPeripheralNoticeName @"kBleDidDisconnectPeripheralNoticeName"
-// 连接失败事件
+// 연결 실패 이벤트
 #define kBleDidFailToConnectPeripheralNoticeName @"kBleDidFailToConnectPeripheralNoticeName"
-// 蓝牙状态改变事件
+// 블루투스 상태 변경 이벤트
 #define kBleDidChangeStateNoticeName @"kBleDidChangeStateNoticeName"
-// 发现设备事件
+// 디바이스 발견 이벤트
 #define kBleDidPeripheralFoundNoticeName @"kBleDidPeripheralFoundNoticeName"
-// 不支持设备，设备会被断开
+// 장치를 지원하지 않아 장치가 연결이 끊김
 #define kLuckPrinterDidNotSupportNoticeName @"kLuckPrinterDidNotSupportNoticeName"
+
 ```
 
-#### 连接设备
+#### 디바이스 연결
 
 ```swift
 override func viewDidLoad() {
     super.viewDidLoad()
 
-    // 监听发现设备事件
+    // 디바이스 발견 이벤트를 듣습니다
     NotificationCenter.default.addObserver(self, selector: #selector(luckBleDidDiscoverPrinters(sender:)), name: NSNotification.Name.init("kBleDidPeripheralFoundNoticeName"), object: nil)
-    // 监听设备连接事件
+    // 디바이스 연결 이벤트를 듣습니다
     NotificationCenter.default.addObserver(self, selector: #selector(luckBleDidConnect(sender:)), name: NSNotification.Name.init("kBleDidConnectPeripheralNoticeName"), object: nil)
     
 }
 
 @objc func luckBleDidDiscoverPrinters(sender: Notification) {
-    // 发现新设备，请按自己需求做过滤，避免因设备被禁用影响用户体验
+    // 새로운 장치를 발견하면 필요에 따라 필터링하여 장치가 비활성화되어 사용자 경험이 영향을받지 않도록하십시오.
     guard let obj = sender.object as? NSDictionary else { return }
     guard let peripheral = obj["peripheral"] as? CBPeripheral else { return }
     if device_list.contains(peripheral) {
@@ -76,7 +76,7 @@ override func viewDidLoad() {
     tableView.reloadData()
 }
 
-// 连接设备
+// 디바이스 연결
 override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
     
@@ -86,17 +86,18 @@ override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: Inde
 
 
 @objc func luckBleDidConnect(sender: Notification) {
-    // 连接成功 只有连接成功JKBleManager.sharedInstance().printer才会有值
+    // 연결 성공 연결이 성공하면 JKBleManager.sharedInstance().printer에만 값이 있습니다
     self.navigationController?.popViewController(animated: true)
 }
+
 ```
 
 
-#### 获取设备信息
+#### 디바이스 정보 가져 오기
 ```swift
 printer.getInfo { [weak self] info, error in
     guard let weakself = self else { return }
-    // 不同型号获取到的信息有些字段可能为空
+    // 다른 모델에서 가져온 정보는 일부 필드가 비어 있을 수 있습니다.
     let str = """
         state = \(info.state) thick = \(info.thick) time = \(info.closeTime)
         power = \(info.power) speed = \(info.speed) paper = \(info.paperType)
@@ -104,48 +105,50 @@ printer.getInfo { [weak self] info, error in
         """
 }
 
-// 设置浓度
+// 농도 설정
 printer.thick = 1
-// 设置纸张类型
+// 종이 종류 설정
 printer.paperType = .ZD
-// 设置关机时间
+// 종료 시간 설정
 printer.closeTime = 20
-// 设置打印机属性后，请调用同步到打印机
+// 프린터 속성을 설정 한 후에는 프린터에 동기화하려면 호출하십시오.
 printer.synchronize {
                     
 }
+
 ```
 
 
-#### 打印示例
+#### 예시 인쇄
 
 ```swift
 guard let printer = JKBleManager.sharedInstance().printer else { return }
-// 设置浓度，默认1，适中，如果不需要请忽略
+// 농도 설정, 기본값은 1이며 중간 정도입니다. 필요하지 않은 경우 무시하십시오.
 printer.thick = 1
-// 设置纸张类型，A4设备才需要，迷你请忽略
+// 종이 종류 설정, A4 장치 만 필요합니다. 미니 무시하십시오.
 printer.paperType = .ZD
-// 设置纸张尺寸，数据类型请参考sdk，设备只支持一种尺寸的忽略
+// 종이 크기 설정, 데이터 형식은 sdk를 참조하십시오. 장치에서 한 가지 크기 만 지원하므로 무시하십시오.
 printer.labelSize = size
-// 是否是标签打印
+// 라벨 인쇄 여부
 printer.isLabel = true
-// 缩放到打印机需要的尺寸
+// 프린터에 필요한 크기로 축소
 let printImage = printer.normalPreviewImage(zx)
 
 
-// 下面两个方法按需调用
+// 아래 두 메서드는 필요에 따라 호출하십시오.
 
-// 调用连续纸打印,
+// 연속 용지 인쇄 호출,
 printer.print([printImage], copies: 1) {error in
-    print("打印完成")
+    print("인쇄 완료")
 }
 
-// 调用标签打印
+// 라벨 인쇄 호출
 printer.printLabel([printImage], copies: 1) {error in
-    print("打印完成")
+    print("인쇄 완료")
 }
+
 ```
 
-#### 其他
-更多使用情况请参考下载本库，参考Example
+#### 기타
+더 많은 사용 사례는이 라이브러리를 다운로드하고 Example을 참조하십시오.
 
