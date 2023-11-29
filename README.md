@@ -7,6 +7,9 @@
 ## Introduction
 This library is used for communication with printers on the iOS platform. For those who need it, please refer to the tutorial below to integrate the SDK and interact with LuckJingle printers!
 
+
+
+
 ## Preparation
 Please contact the relevant personnel to obtain the asKey to ensure that you can use the SDK normally. Before applying for the asKey, please confirm the supported printer models.
 
