@@ -1,0 +1,6 @@
+framework module ImageDataProcesser {
+  umbrella header "ImageDataProcesser.h"
+  export *
+
+  module * { export * }
+}
