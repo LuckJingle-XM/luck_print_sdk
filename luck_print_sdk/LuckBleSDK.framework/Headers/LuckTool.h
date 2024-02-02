@@ -25,6 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage *)scaleAndFillImage:(UIImage *)image toSize:(CGSize)targetSize;
 
++ (UIImage *)scaleAndClipWidthImage:(UIImage *)image toSize:(CGSize)targetSize;
+
++ (UIImage *)scaleAndClipHeightImage:(UIImage *)image toSize:(CGSize)targetSize;
+
 + (UIImage *)compressImage:(UIImage *)image maxLength:(NSInteger)maxLength;
 
 + (UIImage *)rotateImage:(UIImage *)image byDegrees:(CGFloat)degrees;
@@ -36,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)erzhi:(UIImage *)image;
 
 + (UIImage *)adaptiveThresholdingForImage:(UIImage *)inputImage withWindowSize:(int)windowSize;
+
++ (UIImage *)drawWithWhiteBgImage:(UIImage *)image imgSize:(CGSize)imgSize bgSize:(CGSize)bgSize;
 
 @end
 

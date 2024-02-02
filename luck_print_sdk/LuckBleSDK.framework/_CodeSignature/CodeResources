@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/LPSendTask.h</key>
 		<data>
-		vGpS6zlnXC6setKjJ+V/7v3X7Co=
+		wWURqNnecoF+PBZXTGSU24Z890o=
 		</data>
 		<key>Headers/LuckBleSDK.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/LuckLabelSize.h</key>
 		<data>
-		5Wi/S4d/ZkhhB5ifbQQ/+ccOA00=
+		fPK8SmGzfliCgjS1fpDMTuJ4iKU=
 		</data>
 		<key>Headers/LuckPrinter.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Headers/LuckPrinterInfo.h</key>
 		<data>
-		/ChVOHhn4j7ZOFGVcMG3/FWC6RQ=
+		plp40u7phtRsSQp95xTUAtrWW8M=
 		</data>
 		<key>Headers/LuckTool.h</key>
 		<data>
-		R4Wvdn1wWVdwqUp2Tuapa+tUpFQ=
+		OabTnJjG5g/FY3lB1bhDUf+BR9I=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -58,11 +58,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vGpS6zlnXC6setKjJ+V/7v3X7Co=
+			wWURqNnecoF+PBZXTGSU24Z890o=
 			</data>
 			<key>hash2</key>
 			<data>
-			2xA3PKhl8WAZyhvnarzc4a3fO9o7rcj7IR5xotWNA0g=
+			u3O4w9FJoWmJVQwj0WOx4Y++WrJ4oMCRNjUk4FF4HcU=
 			</data>
 		</dict>
 		<key>Headers/LuckBleSDK.h</key>
@@ -80,11 +80,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5Wi/S4d/ZkhhB5ifbQQ/+ccOA00=
+			fPK8SmGzfliCgjS1fpDMTuJ4iKU=
 			</data>
 			<key>hash2</key>
 			<data>
-			FOlzhemLH/sMi4jrQhOm8OIVOM5njWwaTjnELQuzGXc=
+			DoWcTEXf3O5h+1/CfjltK0knuVea/4OZkR+TjF1Ulww=
 			</data>
 		</dict>
 		<key>Headers/LuckPrinter.h</key>
@@ -102,22 +102,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/ChVOHhn4j7ZOFGVcMG3/FWC6RQ=
+			plp40u7phtRsSQp95xTUAtrWW8M=
 			</data>
 			<key>hash2</key>
 			<data>
-			HQNxo9RMNt+JyRiYJMHM03c24tVL90r2HDoXqz3hksI=
+			XJF12qtngDducrThQuHXpp64+HYK714C5vxqqRYZJpc=
 			</data>
 		</dict>
 		<key>Headers/LuckTool.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R4Wvdn1wWVdwqUp2Tuapa+tUpFQ=
+			OabTnJjG5g/FY3lB1bhDUf+BR9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			rZkKiMlF/Mn+L13cpGgWu/6lVVPaiuQ9K8rQeaz13+Y=
+			+px8nO451SNlY1FiPgJHgHCB2v9tGQwOKIcqXYvpfKg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

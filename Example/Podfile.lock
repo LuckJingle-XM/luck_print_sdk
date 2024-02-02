@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  luck_print_sdk: 66e85c4c5f0980391b2214cf92916524e4b0f126
+  luck_print_sdk: d2818cf4cd58d369e0fd681efc7b4c6a926df44b
 
 PODFILE CHECKSUM: 357a64d2aa8f6058793a5230ab8bac9df3128592
 

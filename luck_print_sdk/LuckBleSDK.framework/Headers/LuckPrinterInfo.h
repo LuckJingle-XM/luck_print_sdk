@@ -55,19 +55,19 @@ typedef NS_OPTIONS(NSUInteger, LPPrinterState) {
 @property (nonatomic , readonly) LPManufacturerType manufacturer;
 
 /// 型号
-@property (nonatomic , copy) NSString *model;
+@property (nonatomic , copy, nullable) NSString *model;
 
 /// 蓝牙名字
-@property (nonatomic , copy) NSString *name;
+@property (nonatomic , copy, nullable) NSString *name;
 
 /// mac地址
-@property (nonatomic , copy) NSString *mac;
+@property (nonatomic , copy, nullable) NSString *mac;
 
 /// sn
-@property (nonatomic , copy) NSString *sn;
+@property (nonatomic , copy, nullable) NSString *sn;
 
 /// 固件版本
-@property (nonatomic , copy) NSString *version;
+@property (nonatomic , copy, nullable) NSString *version;
 
 /// 状态
 @property (nonatomic , assign) LPPrinterState state;
@@ -96,8 +96,11 @@ typedef NS_OPTIONS(NSUInteger, LPPrinterState) {
 /// 支持的标签尺寸
 @property (nonatomic , readonly) NSArray <LuckLabelSize *>*supportLabelSizes;
 
-/// 当前标签尺寸
-@property (nonatomic , strong) LuckLabelSize *labelSize;
+/// 当前纸张尺寸
+@property (nonatomic , strong, nullable) LuckLabelSize *labelSize;
+
+/// 标签打印的尺寸
+@property (nonatomic , strong, nullable) LuckLabelSize *sizeForLabelPrint;
 
 
 /// 是否是A4

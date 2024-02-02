@@ -21,22 +21,20 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/汤俊杰/luck_print_sdk'
+  s.homepage         = 'https://github.com/LuckJingle-XM/luck_print_sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '汤俊杰' => '921969987@qq.com' }
-  s.source           = { :git => 'https://github.com/汤俊杰/luck_print_sdk.git', :tag => s.version.to_s }
+  s.author           = { 'Junky' => '921969987@qq.com' }
+  s.source           = { :git => 'https://github.com/LuckJingle-XM/luck_print_sdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
-
-  s.source_files = 'luck_print_sdk/Classes/**/*'
   
   # s.resource_bundles = {
   #   'luck_print_sdk' => ['luck_print_sdk/Assets/*.png']
   # }
   s.vendored_frameworks = "luck_print_sdk/*.framework"
-  s.source_files = "YourFrameworkName/**/*.{h,m,swift}"
+#  s.source_files = "luck_print_sdk/*.framework"
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

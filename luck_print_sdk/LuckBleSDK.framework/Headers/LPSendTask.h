@@ -34,7 +34,11 @@ typedef NSObject * _Nullable(^TaskParse)(NSData *data);
 + (instancetype)setPaperTask:(LPPaperType)type compelete:(TaskCompelete)compelete;
 + (instancetype)l2SetPaperTask:(LPPaperType)type compelete:(TaskCompelete)compelete;
 
+
++ (instancetype)d2SetPaperWidthTask:(NSUInteger)type compelete:(TaskCompelete)compelete;
+
 + (instancetype)printerEnableTaskCompelete:(TaskCompelete)compelete;
++ (instancetype)p15PrinterEnableTaskCompelete:(TaskCompelete)compelete;
 + (instancetype)printerWakeTaskCompelete:(TaskCompelete)compelete;
 + (instancetype)printerStopTaskCompelete:(TaskCompelete)compelete;
 + (instancetype)hll1printerStopTaskCompelete:(TaskCompelete)compelete;

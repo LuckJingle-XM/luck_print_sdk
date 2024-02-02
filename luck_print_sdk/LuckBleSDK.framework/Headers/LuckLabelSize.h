@@ -59,6 +59,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 宽度为100的尺寸合集
 + (NSArray <LuckLabelSize *>*)labelList100;
 
+/// 面单
++ (NSArray <LuckLabelSize *>*)labelList80;
+
 /// A4
 + (instancetype)a4;
 

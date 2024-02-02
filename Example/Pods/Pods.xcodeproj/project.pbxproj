@@ -15,7 +15,6 @@
 			dependencies = (
 			);
 			name = luck_print_sdk;
-			productName = luck_print_sdk;
 		};
 /* End PBXAggregateTarget section */
 
@@ -29,49 +28,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ABC191B8ACC9CFC2DD4F73C027E64F2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1767971B19D4724B80092739943F9710;
-			remoteInfo = luck_print_sdk;
-		};
-		C018F382B8FBD29EC8FB367BE1E71D3F /* PBXContainerItemProxy */ = {
+		1322F3C916F899859461461E4419A78B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 574948D69EAE031525707C9717FBE177;
 			remoteInfo = "Pods-luck_print_sdk_Example";
 		};
+		F40FF20F0AFA0D8CCB40DE8FCAE82574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1767971B19D4724B80092739943F9710;
+			remoteInfo = luck_print_sdk;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0168731A709CA80F1B80CD2A4D976359 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		04F0A68FE898C9A85E87BBBE29382B32 /* LuckBleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LuckBleSDK.framework; path = luck_print_sdk/LuckBleSDK.framework; sourceTree = "<group>"; };
 		0BAA942B90AAFD221F46798F8B46739C /* Pods-luck_print_sdk_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-luck_print_sdk_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1DDC646D91A22270CC618A1E0F2D8001 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		337BCED60F9ED0BCABEF37B6D4315CA7 /* Pods-luck_print_sdk_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-luck_print_sdk_Example-umbrella.h"; sourceTree = "<group>"; };
+		3DD2AA4DAB86517E7F03906755D63395 /* luck_print_sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = luck_print_sdk.debug.xcconfig; sourceTree = "<group>"; };
 		3DECC9ADFBE7112214EBEC36533542A2 /* Pods-luck_print_sdk_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-luck_print_sdk_Example.modulemap"; sourceTree = "<group>"; };
+		40CA94E14505D4ABB3567530BB901D4E /* LuckBleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LuckBleSDK.framework; path = luck_print_sdk/LuckBleSDK.framework; sourceTree = "<group>"; };
 		4BEA46AF2F77D5908A7E4B9A9FEB834D /* Pods-luck_print_sdk_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-luck_print_sdk_Tests"; path = Pods_luck_print_sdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5475B9F52E6DBDF160038F92C94FC083 /* luck_print_sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = luck_print_sdk.release.xcconfig; sourceTree = "<group>"; };
 		5DA54758FABBF9CBE72435BAD821DFED /* Pods-luck_print_sdk_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-luck_print_sdk_Tests-dummy.m"; sourceTree = "<group>"; };
 		65C4720571F2A6250C336BC741431719 /* Pods-luck_print_sdk_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-luck_print_sdk_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		756183626A1192EA7C4AC1CCB1962A68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		8DFAAF9CEAAA61893501F11B36D1BAC3 /* Pods-luck_print_sdk_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-luck_print_sdk_Example-dummy.m"; sourceTree = "<group>"; };
+		9327B364AA16DFC59C6DE5AC79DB1FFA /* luck_print_sdk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = luck_print_sdk.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		935EC58EA68C9FE1518E047C3AF21331 /* Pods-luck_print_sdk_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-luck_print_sdk_Tests-umbrella.h"; sourceTree = "<group>"; };
 		945A0B2A8B3ADC88DDCA7764233D6187 /* Pods-luck_print_sdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-luck_print_sdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9730B187E48AAB5893968DD351E3BE90 /* luck_print_sdk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = luck_print_sdk.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A60C33385EBE2487D6C1840389C11592 /* Pods-luck_print_sdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-luck_print_sdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB62736C0971113B7E24F60E3FDD74AF /* Pods-luck_print_sdk_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-luck_print_sdk_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B6C46939A64AD606DB005F4E252E17D6 /* Pods-luck_print_sdk_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-luck_print_sdk_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BFE204E430510D5059FB648BEFF6CCC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C093DC8B329E188DB32434458003796B /* Pods-luck_print_sdk_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-luck_print_sdk_Example-Info.plist"; sourceTree = "<group>"; };
 		C29C22C014F1DE8D8D26B535C5DE786A /* Pods-luck_print_sdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-luck_print_sdk_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D76DDC095192B923A0014A1C0CE33A78 /* Pods-luck_print_sdk_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-luck_print_sdk_Tests-Info.plist"; sourceTree = "<group>"; };
-		DD914FB4766E25DE450A2A2C7497B20C /* ImageDataProcesser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageDataProcesser.framework; path = luck_print_sdk/ImageDataProcesser.framework; sourceTree = "<group>"; };
 		E08223141AC71B7626D23185B28FD68E /* Pods-luck_print_sdk_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-luck_print_sdk_Example"; path = Pods_luck_print_sdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F264A9FD61307E25ECC444300BBA8E4A /* luck_print_sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = luck_print_sdk.release.xcconfig; sourceTree = "<group>"; };
 		F4A8F8F930D95A940819248BA4DB098D /* Pods-luck_print_sdk_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-luck_print_sdk_Tests.modulemap"; sourceTree = "<group>"; };
-		FEB36D9410710D4BE2545F68D77B9952 /* luck_print_sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = luck_print_sdk.debug.xcconfig; sourceTree = "<group>"; };
 		FFD4F91EED7B23DC81A95D5FC95C6F92 /* Pods-luck_print_sdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-luck_print_sdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,18 +96,29 @@
 		107CBF2636EEF5ECE9A382A620A905C6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E4A27209314E47FD0BD759D4B939FF14 /* luck_print_sdk */,
+				A395CAD9158E2D3E99DFF81FC27077F2 /* luck_print_sdk */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		4BAE7F6921DB6973BEB1E212F10BF675 /* Frameworks */ = {
+		2310809D0C43A84B2F48293F7CE9C10E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DD914FB4766E25DE450A2A2C7497B20C /* ImageDataProcesser.framework */,
-				04F0A68FE898C9A85E87BBBE29382B32 /* LuckBleSDK.framework */,
+				3DD2AA4DAB86517E7F03906755D63395 /* luck_print_sdk.debug.xcconfig */,
+				F264A9FD61307E25ECC444300BBA8E4A /* luck_print_sdk.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/luck_print_sdk";
+			sourceTree = "<group>";
+		};
+		41620B701037E387605FA864C8EDC04F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1DDC646D91A22270CC618A1E0F2D8001 /* LICENSE */,
+				9327B364AA16DFC59C6DE5AC79DB1FFA /* luck_print_sdk.podspec */,
+				756183626A1192EA7C4AC1CCB1962A68 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -145,24 +154,23 @@
 			path = "Target Support Files/Pods-luck_print_sdk_Example";
 			sourceTree = "<group>";
 		};
-		A9401B6BB4CBC307B0F55D02E3E9B9A1 /* Support Files */ = {
+		A395CAD9158E2D3E99DFF81FC27077F2 /* luck_print_sdk */ = {
 			isa = PBXGroup;
 			children = (
-				FEB36D9410710D4BE2545F68D77B9952 /* luck_print_sdk.debug.xcconfig */,
-				5475B9F52E6DBDF160038F92C94FC083 /* luck_print_sdk.release.xcconfig */,
+				A6E001D2DC05D3186A359B5610B6DB26 /* Frameworks */,
+				41620B701037E387605FA864C8EDC04F /* Pod */,
+				2310809D0C43A84B2F48293F7CE9C10E /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/luck_print_sdk";
+			name = luck_print_sdk;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		C87B9113FD14D41DD02A01842BA4E0E1 /* Pod */ = {
+		A6E001D2DC05D3186A359B5610B6DB26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0168731A709CA80F1B80CD2A4D976359 /* LICENSE */,
-				9730B187E48AAB5893968DD351E3BE90 /* luck_print_sdk.podspec */,
-				BFE204E430510D5059FB648BEFF6CCC1 /* README.md */,
+				40CA94E14505D4ABB3567530BB901D4E /* LuckBleSDK.framework */,
 			);
-			name = Pod;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C8812969E726BCC135817F6205712F34 /* Targets Support Files */ = {
@@ -191,17 +199,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E4A27209314E47FD0BD759D4B939FF14 /* luck_print_sdk */ = {
-			isa = PBXGroup;
-			children = (
-				4BAE7F6921DB6973BEB1E212F10BF675 /* Frameworks */,
-				C87B9113FD14D41DD02A01842BA4E0E1 /* Pod */,
-				A9401B6BB4CBC307B0F55D02E3E9B9A1 /* Support Files */,
-			);
-			name = luck_print_sdk;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		F8BFEC21839BBA5A8660967A2991C1A1 /* Pods-luck_print_sdk_Tests */ = {
@@ -254,7 +251,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F1C8EA61DDEB9B41506B2215FE40CBBF /* PBXTargetDependency */,
+				9CE4FE1FB3AE90BE0A6B22803DB0D226 /* PBXTargetDependency */,
 			);
 			name = "Pods-luck_print_sdk_Example";
 			productName = Pods_luck_print_sdk_Example;
@@ -273,7 +270,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C3AA8F45FE42BBD593DE280213422B38 /* PBXTargetDependency */,
+				16FB27A8102A98390300346FB1016D47 /* PBXTargetDependency */,
 			);
 			name = "Pods-luck_print_sdk_Tests";
 			productName = Pods_luck_print_sdk_Tests;
@@ -346,17 +343,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C3AA8F45FE42BBD593DE280213422B38 /* PBXTargetDependency */ = {
+		16FB27A8102A98390300346FB1016D47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-luck_print_sdk_Example";
 			target = 574948D69EAE031525707C9717FBE177 /* Pods-luck_print_sdk_Example */;
-			targetProxy = C018F382B8FBD29EC8FB367BE1E71D3F /* PBXContainerItemProxy */;
+			targetProxy = 1322F3C916F899859461461E4419A78B /* PBXContainerItemProxy */;
 		};
-		F1C8EA61DDEB9B41506B2215FE40CBBF /* PBXTargetDependency */ = {
+		9CE4FE1FB3AE90BE0A6B22803DB0D226 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = luck_print_sdk;
 			target = 1767971B19D4724B80092739943F9710 /* luck_print_sdk */;
-			targetProxy = ABC191B8ACC9CFC2DD4F73C027E64F2D /* PBXContainerItemProxy */;
+			targetProxy = F40FF20F0AFA0D8CCB40DE8FCAE82574 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,7 +463,7 @@
 		};
 		7F5E10DBB7A88BF7135FB9B253E728A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5475B9F52E6DBDF160038F92C94FC083 /* luck_print_sdk.release.xcconfig */;
+			baseConfigurationReference = F264A9FD61307E25ECC444300BBA8E4A /* luck_print_sdk.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -518,7 +515,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -585,7 +581,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -603,7 +598,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -646,7 +642,7 @@
 		};
 		FE925D04E6FDDCF3C77C62CDB08F1487 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEB36D9410710D4BE2545F68D77B9952 /* luck_print_sdk.debug.xcconfig */;
+			baseConfigurationReference = 3DD2AA4DAB86517E7F03906755D63395 /* luck_print_sdk.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
