@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'luck_print_sdk'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of luck_print_sdk.'
 
 # This description is used to generate tags and improve search results.
