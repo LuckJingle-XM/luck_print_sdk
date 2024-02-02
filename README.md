@@ -22,6 +22,7 @@ Please download the files from this library: LuckBleSDK.framework, ImageDataProc
 #### cocoapods
 Use Cocoapods for dependency management.
 ```
+# Not supported yet
 pod 'printer_framework_ios'
 ```
 
