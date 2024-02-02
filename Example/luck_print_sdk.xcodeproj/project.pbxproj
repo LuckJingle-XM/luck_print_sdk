@@ -12,7 +12,7 @@
 		3B9C02A52B16E1E400399E6C /* DeviceTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C02A42B16E1E400399E6C /* DeviceTableController.swift */; };
 		3B9C02A72B16E1EC00399E6C /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C02A62B16E1EC00399E6C /* ImageController.swift */; };
 		3B9C02A92B16E1F400399E6C /* SelectedImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C02A82B16E1F400399E6C /* SelectedImageController.swift */; };
-		3BEBF75D2B6CE710001F5646 /* ImageDataProcesser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEBF75C2B6CE710001F5646 /* ImageDataProcesser.framework */; };
+		3BEBF75F2B6CF0C7001F5646 /* ImageDataProcesser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEBF75E2B6CF0C7001F5646 /* ImageDataProcesser.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -43,7 +43,7 @@
 		3B9C02A42B16E1E400399E6C /* DeviceTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTableController.swift; sourceTree = "<group>"; };
 		3B9C02A62B16E1EC00399E6C /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		3B9C02A82B16E1F400399E6C /* SelectedImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedImageController.swift; sourceTree = "<group>"; };
-		3BEBF75C2B6CE710001F5646 /* ImageDataProcesser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImageDataProcesser.framework; sourceTree = "<group>"; };
+		3BEBF75E2B6CF0C7001F5646 /* ImageDataProcesser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImageDataProcesser.framework; sourceTree = "<group>"; };
 		45FC49FC04CB4BE4EC24CC19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* luck_print_sdk_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luck_print_sdk_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29DB7498870B072437D25E9A /* Pods_luck_print_sdk_Example.framework in Frameworks */,
-				3BEBF75D2B6CE710001F5646 /* ImageDataProcesser.framework in Frameworks */,
+				3BEBF75F2B6CF0C7001F5646 /* ImageDataProcesser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 		607FACD21AFB9204008FA782 /* Example for luck_print_sdk */ = {
 			isa = PBXGroup;
 			children = (
-				3BEBF75C2B6CE710001F5646 /* ImageDataProcesser.framework */,
+				3BEBF75E2B6CF0C7001F5646 /* ImageDataProcesser.framework */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				3B9C02A42B16E1E400399E6C /* DeviceTableController.swift */,
@@ -485,6 +485,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 69VF5T55UA;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/luck_print_sdk",
@@ -509,6 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 69VF5T55UA;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/luck_print_sdk",
